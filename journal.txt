@@ -1,0 +1,15 @@
+13 nov. 13:49. Le moteur de jeu peut organiser des parties entre 2 modeles : 
+
+affrontement(agent1, agent2, nbTours)
+Repete nbTours fois :
+- demander aux 2 agents leur prochain coup (et donner le coup joué par l'adversaire avant)
+- calculer les points obtenues
+return gagnant (maximise les points)
+
+13 nov. 14:12. Idee pour le tournoi, vu quil peut y avoir une égalité :
+- victoire d'une manche +2
+- égalité +1 pour les 2
+- defaite +0
+
+13 nov. 14:47. si le coup precedent de l'adversaire est None cela signifie que cest le premier tour
+
