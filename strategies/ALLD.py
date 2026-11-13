@@ -1,11 +1,11 @@
 class ALLD:
     def __init__(self):
-        pass
+        self.name = "ALLD"
     
-    def nextAction(adverCoupPrec, seed):
-        return "D"
+    def nextAction(self, adverCoupPrec):
+        return 1 # D
 
-    def isFirstTurn(adverCoupPrec):
-        if adverCoupPrec:
-            return False
-        return True
+    def isFirstTurn(self, adverCoupPrec):
+        if adverCoupPrec == None:
+            return True
+        return False

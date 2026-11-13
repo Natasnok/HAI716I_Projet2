@@ -13,3 +13,12 @@ return gagnant (maximise les points)
 
 13 nov. 14:47. si le coup precedent de l'adversaire est None cela signifie que cest le premier tour
 
+13 nov. 15:09. j'ai vu que dans la consigne ça demmandait de possiblement changer la matrice de score donc j'enleve les if else pour identifier le winner et j'y met directement les matrices
+
+13 nov. 15:30. systeme de generation de seed si elle n'est pas passé en parametre et utilise random de python pour faire laleatoire
+
+13 nov. 16:02. Joss change C en D une fois sur 10 en fonction de la seed
+
+13 nov. 16:05. Tester si l'adversaire reposte une fois restera en imitation de TFT
+
+13 nov. 16:21. Erreur 0 était reconnu comme None dans isFirstTurn
