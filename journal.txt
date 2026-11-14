@@ -22,3 +22,6 @@ return gagnant (maximise les points)
 13 nov. 16:05. Tester si l'adversaire reposte une fois restera en imitation de TFT
 
 13 nov. 16:21. Erreur 0 était reconnu comme None dans isFirstTurn
+
+14 nov. 17:35. En mettant en place une nouvelle matrice, j'ai remarqué que les resultats étaient identiques. En effet l'idee du tournoi mise en place plus tot transforme le jeu en jeu à somme nulle. 
+Je vais donc revenir sur un simple total des scores.
