@@ -20,6 +20,7 @@ class Tester:
             nextAction = 1 # D au premier tour
         elif self.TFT:
             nextAction = TitForTat.nextAction(self, adverCoupPrec)
+            return nextAction # le bruit est appliqué dans TitForTat
         else:
             if self.actionAFaire == []:
                 self.actionAFaire =[0,0,1]

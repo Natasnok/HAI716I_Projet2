@@ -14,7 +14,7 @@ class InverseTitForTat:
         else:
             nextAction = 0
 
-        nextAction = self.bruitInverse(self.rng, nextAction, self.bruit)
+        # pas de bruit ici, car le bruit est appliqué dans TitForTat
         return nextAction
 
     def isFirstTurn(self, adverCoupPrec):
