@@ -1,8 +1,11 @@
 from strategies.TitForTat import *
 
 class Tester:
-    def __init__(self):
+    def __init__(self, rng, bruit):
         self.name = "Tester"
+
+        self.bruit = bruit
+        self.rng = rng
 
         self.actionAFaire = []
         self.TFT = False
@@ -14,15 +17,26 @@ class Tester:
         if self.isFirstTurn(adverCoupPrec):
             self.actionAFaire = []
             self.TFT = False
-            return 1 # D au premier tour
+            nextAction = 1 # D au premier tour
         elif self.TFT:
-            return TitForTat.nextAction(self, adverCoupPrec)
+            nextAction = TitForTat.nextAction(self, adverCoupPrec)
         else:
             if self.actionAFaire == []:
                 self.actionAFaire =[0,0,1]
-            return self.actionAFaire.pop(0)
+            nextAction = self.actionAFaire.pop(0)
+
+        nextAction = self.bruitInverse(self.rng, nextAction, self.bruit)
+        return nextAction
 
     def isFirstTurn(self, adverCoupPrec):
         if adverCoupPrec == None:
             return True
         return False
+
+    def bruitInverse(self, rng, action, bruit):
+        if rng.randint(1,100) <= bruit: # bruit fois sur 100
+            if action == 0:
+                return 1
+            else:
+                return 0
+        return action

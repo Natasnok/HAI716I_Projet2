@@ -1,4 +1,4 @@
-class GestionnaireDeManche:
+class GestionnaireDePartie:
     def __init__(self, player1, player2, nbTours, matriceScore):
         self.p1 = player1
         self.p2 = player2

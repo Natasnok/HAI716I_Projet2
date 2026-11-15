@@ -27,3 +27,9 @@ return gagnant (maximise les points)
 
 14 nov. 17:35. En mettant en place une nouvelle matrice, j'ai remarqué que les resultats étaient identiques. En effet l'idee du tournoi mise en place plus tot transforme le jeu en jeu à somme nulle. 
 Je vais donc revenir sur un simple total des scores.
+
+14 nov. 17:49. En reflechissant, la raison de pourquoi TitForTat perd de mon coté viens du fait que ses riveaux sont soit aggresifs soit random. Il brillerait si il y a plus de modeles qui cooperent.
+
+14 nov. 18:04. PREDICTION CHANGEMENT ajout matrice chasse au cerf : Je pense que la nouvelle matrice solicite plus la cooperation donc les modeles aggresifs vont se retrouver en bas du classement.
+
+14 nov. 18:07. PREDICTION CHANGEMENT bruit : Je ne pense pas qu'il y aura tant de changement si le bruit est très faible.
